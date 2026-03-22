@@ -1,0 +1,234 @@
+﻿--- ATTEMPTING CONFIG REQUIRE ---
+node : --- CONFIG 
+ERROR --- TypeError: 
+Utils.isRegExp is not 
+a function
+At line:1 char:1
++ node server.js > 
+server_output.txt 
+2>&1; type 
+server_output.txt
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (--- CONFIG ER   
+ RO... not a functi    
+on:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+    at _clone 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1006:22)
+    at 
+Config.cloneDeep 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1046:10)
+    at C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1318:32
+    at Array.forEach 
+(<anonymous>)
+    at util.extendDeep 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1293:9)
+    at C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:651:12
+    at Array.forEach 
+(<anonymous>)
+    at 
+util.loadFileConfigs 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:648:16)
+    at new Config 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:113:27)
+    at 
+Object.<anonymous> 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1510:31)
+--- BEFORE CONFIG ---
+TypeError: 
+Utils.isRegExp is not 
+a function
+    at _clone 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1006:22)
+    at 
+Config.cloneDeep 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1046:10)
+    at C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1318:32
+    at Array.forEach 
+(<anonymous>)
+    at util.extendDeep 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1293:9)
+    at C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:651:12
+    at Array.forEach 
+(<anonymous>)
+    at 
+util.loadFileConfigs 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:648:16)
+    at new Config 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:113:27)
+    at 
+Object.<anonymous> 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\node_
+modules\config\lib\conf
+ig.js:1510:31)
+C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\serve
+r.js:23
+let mongoDbUrl = config
+.get('general.mongoDbUr
+l');
+                       
+ ^
+
+TypeError: Cannot read 
+properties of 
+undefined (reading 
+'get')
+    at 
+Object.<anonymous> 
+(C:\Users\Nikhil 
+Dhawan\Desktop\Ludo UI 
+and DB Screenshot 
+03-19-2026\Ludo Final U
+pdated\backend-api-main
+\backend-api-main\serve
+r.js:23:25)
+    at Module._compile 
+(node:internal/modules/
+cjs/loader:1761:14)
+    at Object..js (node
+:internal/modules/cjs/l
+oader:1893:10)
+    at Module.load (nod
+e:internal/modules/cjs/
+loader:1481:32)
+    at Module._load (no
+de:internal/modules/cjs
+/loader:1300:12)
+    at TracingChannel.t
+raceSync (node:diagnost
+ics_channel:328:14)
+    at wrapModuleLoad (
+node:internal/modules/c
+js/loader:245:24)
+    at Module.executeUs
+erEntryPoint [as 
+runMain] (node:internal
+/modules/run_main:154:5
+)
+    at node:internal/ma
+in/run_main_module:33:4
+7
+
+Node.js v24.13.0
