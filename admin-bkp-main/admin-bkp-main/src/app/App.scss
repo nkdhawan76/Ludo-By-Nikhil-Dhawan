@@ -1,0 +1,353 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* === Plugin styles === */
+
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+@import "../assets/styles/variables";
+@import "~compass-mixins/lib/compass";
+@import "~compass-mixins/lib/animate";
+@import "~bootstrap/scss/bootstrap";
+@import "../assets/styles/fonts";
+@import "../assets/styles/functions";
+
+/* === Icon fonts === */
+@import "~@mdi/font/scss/materialdesignicons";
+
+
+/* === Template mixins === */
+@import "../assets/styles/mixins/animation";
+@import "../assets/styles/mixins/badges";
+@import "../assets/styles/mixins/buttons";
+@import "../assets/styles/mixins/misc";
+@import "../assets/styles/mixins/color-functions";
+@import "../assets/styles/mixins/cards";
+@import "../assets/styles/mixins/blockqoute";
+
+
+/* === Core Styles === */
+@import "../assets/styles/typography";
+@import "../assets/styles/reset";
+@import "../assets/styles/responsive";
+@import "../assets/styles/misc";
+@import "../assets/styles/utilities";
+@import "../assets/styles/demo";
+@import "../assets/styles/spinner";
+@import "../assets/styles/dashboard";
+
+/* === Components === */
+
+@import "../assets/styles/components/checkbox-radio";
+@import "../assets/styles/components/forms";
+@import "../assets/styles/components/icons";
+@import "../assets/styles/components/tables";
+@import "../assets/styles/components/buttons";
+@import "../assets/styles/components/breadcrumbs";
+@import "../assets/styles/components/badges";
+@import "../assets/styles/components/cards";
+@import "../assets/styles/components/preview";
+@import "../assets/styles/components/lists";
+@import "../assets/styles/components/todo-list";
+@import "../assets/styles/components/dropdowns";
+@import "../assets/styles/components/loaders/loaders";
+
+@import "../assets/styles/components/landing-screens/auth";
+
+/* === Plugin Overrides === */
+@import "../assets/styles/components/plugin-overrides/slick-carousel";
+@import "../assets/styles/components/plugin-overrides/jquery-jvectormap";
+
+/* === Layout === */
+@import "../assets/styles/navbar";
+@import "../assets/styles/sidebar";
+@import "../assets/styles/footer";
+@import "../assets/styles/layout";
+
+/* ===/* === LudoWins Design System === */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=DM+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --lw-white: #FFFFFF;
+  --lw-main-bg: #F8FAFC;
+  --lw-dark-navy: #0D1B2A;
+  --lw-primary-green: #00C853;
+  --lw-primary-gradient: linear-gradient(135deg, #00C853, #B2FF59);
+  --lw-secondary-gradient: linear-gradient(135deg, #FF6F00, #FFD54F);
+  --lw-accent-green: #00C853;
+  --lw-accent-orange: #FF6F00;
+  --lw-text-primary: #1A1A2E;
+  --lw-text-secondary: #6B7280;
+  --lw-danger: #EF4444;
+  --lw-success: #22C55E;
+  --lw-border: #E5E7EB;
+  --lw-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --lw-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--lw-white);
+  color: var(--lw-text-primary);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .lw-heading {
+  font-family: 'Baloo 2', cursive;
+}
+
+/* Layout Overrides */
+.container-scroller {
+  background-color: var(--lw-white);
+}
+
+.content-wrapper {
+  background-color: var(--lw-main-bg) !important;
+  padding: 24px !important;
+  transition: all 0.3s ease;
+}
+
+/* Card Styling */
+.card {
+  background: var(--lw-white);
+  border: 1px solid var(--lw-border);
+  border-radius: 16px;
+  box-shadow: var(--lw-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--lw-shadow-hover);
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-family: 'Baloo 2', cursive;
+    color: var(--lw-text-primary);
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: var(--lw-dark-navy) !important;
+  width: 240px;
+  transition: width 0.3s ease;
+
+  .nav {
+    .nav-item {
+      margin: 8px 16px;
+      
+      .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        padding: 12px 15px;
+        transition: all 0.3s ease;
+
+        i {
+          color: inherit;
+        }
+
+        &:hover {
+          background: rgba(0, 200, 83, 0.1);
+          color: var(--lw-primary-green);
+        }
+
+        &.active {
+          background: var(--lw-primary-gradient);
+          color: var(--lw-dark-navy);
+          font-weight: 600;
+          box-shadow: 0 4px 12px rgba(0, 200, 83, 0.3);
+          
+          i {
+            color: var(--lw-dark-navy);
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-brand-wrapper {
+    background-color: var(--lw-dark-navy) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: var(--lw-white) !important;
+  border-bottom: 1px solid var(--lw-border);
+  height: 64px;
+
+  .navbar-brand-wrapper {
+    background-color: var(--lw-white) !important;
+    border-bottom: 1px solid var(--lw-border);
+  }
+
+  .navbar-menu-wrapper {
+    color: var(--lw-text-primary);
+    
+    .page-title {
+      font-family: 'Baloo 2', cursive;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--lw-text-primary);
+    }
+  }
+}
+
+/* Button Styling */
+.btn-lw-primary {
+  background: var(--lw-primary-gradient);
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  color: var(--lw-dark-navy);
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 200, 83, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+.btn-lw-secondary {
+  background: var(--lw-secondary-gradient);
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  color: var(--lw-white);
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(255, 111, 0, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+/* Table Styling (ShadCN-like) */
+.lw-table-container {
+  background: var(--lw-white);
+  border-radius: 16px;
+  border: 1px solid var(--lw-border);
+  overflow: hidden;
+}
+
+.lw-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    background: #F9FAFB;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--lw-text-secondary);
+    border-bottom: 1px solid var(--lw-border);
+  }
+
+  td {
+    padding: 16px;
+    font-size: 0.875rem;
+    color: var(--lw-text-primary);
+    border-bottom: 1px solid var(--lw-border);
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  tr:hover td {
+    background-color: #F9FAFB;
+  }
+}
+
+/* Badge Styling */
+.badge {
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  
+  &-pending { background: #FFF7ED; color: #C2410C; border: 1px solid #FFEDD5; }
+  &-success { background: #F0FDF4; color: #15803D; border: 1px solid #DCFCE7; }
+  &-danger { background: #FEF2F2; color: #B91C1C; border: 1px solid #FEE2E2; }
+}
+
+/* Animations */
+.animate__pulse_slow {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* === DataTables Overrides === */
+.dataTables_wrapper {
+  .dataTables_length,
+  .dataTables_filter,
+  .dataTables_info,
+  .dataTables_paginate {
+    color: var(--text-secondary) !important;
+  }
+
+  .dataTables_length select {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+  }
+
+  .dataTables_filter input {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+  }
+
+  .paginate_button {
+    color: var(--text-secondary) !important;
+    background: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 6px !important;
+    margin: 0 0.25rem !important;
+
+    &:hover {
+      background: var(--primary-color) !important;
+      color: white !important;
+      border-color: var(--primary-color) !important;
+    }
+  }
+
+  .paginate_button.current {
+    background: var(--gradient-primary) !important;
+    border-color: var(--primary-color) !important;
+    color: white !important;
+  }
+
+  .paginate_button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+table td{
+    border: none !important;
+}
