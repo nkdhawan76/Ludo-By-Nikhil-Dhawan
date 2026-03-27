@@ -33,7 +33,7 @@
         "redux": "^4.2.0",
         "remixicon": "^2.5.0",
         "sass": "^1.89.1",
-        "serve": "^14.2.4",
+        "serve": "^14.2.6",
         "simple-line-icons": "^2.4.1",
         "slick-carousel": "^1.8.1",
         "socket.io-client": "^4.5.1",
